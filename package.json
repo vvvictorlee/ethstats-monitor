@@ -9,7 +9,8 @@
   },
   "scripts": {
     "dist": "grunt",
-    "start": "node ./bin/www"
+    "star:test ": "DEBUG=app node  -r dotenv/config ./bin/www dotenv_config_path=.env.test",
+    "start": "DEBUG=app node  -r dotenv/config ./bin/www dotenv_config_path=.env "
   },
   "dependencies": {
     "body-parser": "^1.18.3",
